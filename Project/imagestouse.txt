@@ -1,0 +1,37 @@
+https://unsplash.com/photos/OQrFoNQ_zTU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+<img src="seats_and_games.jpg" alt="Seats with retro games behind">
+
+https://unsplash.com/photos/QWUCeS2qVoM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+<img src="retro_bar.jpg" alt="dark retro bar">
+
+https://unsplash.com/photos/HuIJUp6gTDI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+<img src="diner_layout.jpg" alt= "diner seats">
+
+    <!-- image from: https://unsplash.com/photos/r1oPYgHnBd4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+    <img src="drink.jpg" alt="A drink container">
+
+    <!-- image from:https://unsplash.com/photos/-haAxbjiHds?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+    <img src="phone.jpg" alt="Yellow dial telephone">
+
+    <!-- image from: https://unsplash.com/photos/f3cj6dyBOhc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+    <img src="spilled_frootloops.jpg" alt="Froot loops spilling out of a cone">
+
+    https://unsplash.com/photos/sf_1ZDA1YFw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+    <img src="banana.jpg" alt="a banana">
+
+   https://www.pexels.com/photo/cocktails-led-signage-1260705/
+   <img src="cocktail_sign.jpg" alt="neon open sign">
+
+   https://www.pexels.com/photo/woman-eating-bruschetta-1537635/
+   <img src="women_eating.jpg" alt="women eating meal">
+
+   https://www.pexels.com/photo/assorted-bottle-inside-bar-941864/
+   <img src="bar.jpg" alt="a bar">
+
+    https://www.pexels.com/photo/black-and-red-floral-textile-1819669/
+    <img src="out_of_focus_rest.jpg" alt="blurry restaurant">
+
+    This page is just for my own tracking of what images I'm using.

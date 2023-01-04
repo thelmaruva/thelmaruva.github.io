@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Flipside</title>
+    <link rel="preconnect" href="FLIPSIDE_prev_ui2.png">
+    <link rel="preconnect" href="people_at_table.jpg">
+    <link rel="preconnect" href="record.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        img{
+            width: 70%;
+            padding: 10px 15%;
+        }
+        .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        grid-auto-rows: 270px 100px;
+        }
+        .one {
+        grid-column: 1;
+        grid-row: 1;
+        }
+        .two {
+        grid-column: 1;
+        grid-row: 2;
+        }
+        .three {
+        grid-column: 2;
+        grid-row: 1;
+        }
+        .four {
+        grid-column: 2;
+        grid-row: 2;
+        }
+
+        .wrapper div p{
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+
+        @media(max-width: 768px){
+        .wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+        grid-auto-rows: 40vh 15vh 40vh 15vh;
+        }
+        .one {
+        grid-column: 1;
+        grid-row: 1;
+        }
+        .two {
+        grid-column: 1;
+        grid-row: 2;
+        }
+        .three {
+        grid-column: 1;
+        grid-row: 3;
+        }
+        .four {
+        grid-column: 1;
+        grid-row: 4;
+        }
+        }
+
+    </style>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <img src="media/FLIPSIDE_prev_ui2.png" alt="Flipside logo">
+    </header>
+    <nav class="navbar">
+        <ul class="navlinks">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="aboutus"><a href="aboutus.html">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="whoarewe.html">Who Are We?</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="menus"><a href="menu.html" id="menu">Menu</a>
+                        <ul class="dropdown">
+                            <li><a href="dinnermenu.html">Dinner Menu</a></li>
+                            <li><a href="drinkmenu.html">Drinks Menu</a></li>
+                            <li><a href="dessertmenu.html">Dessert Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </div>
+          </ul>
+    </nav>
+    <h1>About Us</h1>
+
+    <p style="font-size:xx-large">Want to know more? Follow the links on the pictures below to find out!</p>
+
+    <div class="wrapper">
+
+        <div class="one">
+            <!-- image from: https://www.pexels.com/photo/woman-serving-drinks-on-women-sitting-inside-an-establishment-1267262/ -->
+            <a href="whoarewe.html"><img src="media/people_at_table.jpg" alt="people sitting at table"></a>
+        </div>
+
+        <div class="two">
+            <p>Who Are We?</p>
+        </div>
+
+        <div class="three">
+            <!-- image from: https://www.pexels.com/photo/blue-vinyl-record-playing-on-turntable-1389429/ -->
+            <a href="events.html"><img src="media/record.jpg" alt="record on turnstile"></a>
+        </div>
+
+        <div class="four">
+            <p>Events</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="wrapperf">
+            <div class="onef">
+                <p style="text-decoration: underline;"><strong>Opening Hours:</strong></p>
+            </div>
+
+            <div class="twof">
+            <ul style="text-align: center; padding: 0% 10%;" >
+                <li><strong>Bar:</strong> 19:00 - 02:00 (Mon. to Sat.)</li>
+                <li><strong>Restaurant:</strong> 17:00 - 22:00 (Mon. to Sat.)</li>
+            </ul>
+            </div>
+
+            <div class="threef"><p><strong>Tel:</strong> +01 372 081 3892</p></div>
+
+            <div class="fourf"><p><strong>Email:</strong> info@flipside.ie</p></div>
+
+            <div style="text-align: left;" class="fivef"><p><strong>Follow us for more:</strong></p></div>
+
+            <div class="sixf">
+                <a href="https://twitter.com" class="fa fa-twitter"></a> <p style="display:inline;">@flipside_diner</p>
+                <a href="https://instagram.com" class="fa fa-instagram"></a> <p style="display:inline;">@flipside_diner</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

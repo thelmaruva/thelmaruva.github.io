@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Flipside</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="FLIPSIDE_prev_ui2.png">
+    <link rel="preconnect" href="diner_layout.jpg">
+    <link rel="preconnect" href="seats_and_games.jpg">
+    <link rel="preconnect" href="retro_bar.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(230px, auto);
+        }
+        .one {
+        grid-column: 1;
+        grid-row: 1;
+        }
+        .two {
+        grid-column: 2;
+        grid-row: 1;
+        }
+        .three {
+        grid-column: 2;
+        grid-row: 2;
+        }
+        .four {
+        grid-column: 1;
+        grid-row: 2;
+        }
+        .five {
+        grid-column: 1;
+        grid-row: 3;
+        }
+        .six {
+        grid-column: 2;
+        grid-row: 3;
+        }
+        img{
+            width: 90%;
+            height: 90%;
+        }
+        .wrapper div p{
+        font-size: 2.5vw;
+        width: 85%;
+        padding: 5%;
+        border: 2px solid rgb(199, 54, 96);
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px rgb(134, 2, 46);
+        background-color: rgb(232, 153, 36);
+        }
+
+        p a{
+            color: rgb(66, 6, 6);
+        }
+        @media(max-width: 768px){
+            .wrapper {
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 10px;
+            grid-auto-rows: repeat(6, 230px);
+            }
+            .one {
+            grid-column: 1;
+            grid-row: 1;
+            padding: 0 5%;
+            }
+            .two {
+            grid-column: 1;
+            grid-row: 2;
+            padding: 5px 0;
+            }
+            .three {
+            grid-column: 1;
+            grid-row: 3;
+            padding: 0 10%;
+            }
+            .four {
+            grid-column: 1;
+            grid-row: 4;
+            padding: 5px 0;
+            }
+            .five {
+            grid-column: 1;
+            grid-row: 5;
+            padding: 0 10%;
+            }
+            .six {
+            grid-column: 1;
+            grid-row: 6;
+            padding: 5px 0;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .wrapper div p{
+            font-size: 3vw;
+            width: 85%;
+            padding: 5%;
+            border: 2px solid rgb(199, 54, 96);
+            border-radius: 25px;
+            box-shadow: 10px 10px 5px rgb(134, 2, 46);
+            background-color: rgb(232, 153, 36);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="media/FLIPSIDE_prev_ui2.png" alt="Flipside logo">
+    </header>
+
+    <!-- I am aware that this navigation contains invalid html, as there are elements other than <li> within the <ul>.
+        I got the code for it from: https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/ and I only realised the
+        mistake when it was too late to change it. -->
+    <nav class="navbar">
+        <ul class="navlinks">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="aboutus"><a href="aboutus.html">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="whoarewe.html">Who Are We?</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="menus"><a href="menu.html" id="menu">Menu</a>
+                        <ul class="dropdown">
+                            <li><a href="dinnermenu.html">Dinner Menu</a></li>
+                            <li><a href="drinkmenu.html">Drinks Menu</a></li>
+                            <li><a href="dessertmenu.html">Dessert Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </div>
+          </ul>
+    </nav>
+    
+            <h1>Can ya' dig it?</h1>
+            <p style="font-size: xx-large"><strong>We've got all you could want and more here at Flipside!</strong></p>
+
+    <div class="wrapper">
+        <div class="one">
+        <p class="para">Visit our retro-style restaurant where you can dine in one of our booths, with a meal that'll make you flip your lid!
+        You won't find a finer diner than Flipside.</p>
+        </div>
+
+        <div class="two">
+        <!-- image from: https://unsplash.com/photos/HuIJUp6gTDI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+        <img src="media/diner_layout.jpg" alt= "diner seats">
+        </div>
+
+        <div class="three">
+        <p>Have you heard of our special themed nights? We have a totally tubular line-up from Motown Monday to Saturday Night Fever. 
+        Intrigued?<a href="events.html"> Click here to find out more!</a></p>
+        </div>
+
+        <div class="four">
+        <!-- https://unsplash.com/photos/OQrFoNQ_zTU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+        <img src="media/seats_and_games.jpg" alt="Seats with retro games behind">
+        </div>
+
+        <div class="five">
+        <p>Not feeling a whole meal? Drop into Flipside Bar where you can still enjoy the atmosphere with a range of 
+        retro-themed drinks available to order.<a href="drinkmenu.html"> Click here to see our drink menu.</a></p>
+        </div>
+        
+        <div class="six">
+        <!-- https://unsplash.com/photos/QWUCeS2qVoM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+        <img src="media/retro_bar.jpg" alt="dark retro bar">
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="wrapperf">
+            <div class="onef">
+                <p style="text-decoration: underline;"><strong>Opening Hours:</strong></p>
+            </div>
+
+            <div class="twof">
+            <ul style="text-align: center; padding: 0% 10%;" >
+                <li><strong>Bar:</strong> 19:00 - 02:00 (Mon. to Sat.)</li>
+                <li><strong>Restaurant:</strong> 17:00 - 22:00 (Mon. to Sat.)</li>
+            </ul>
+            </div>
+
+            <div class="threef"><p><strong>Tel:</strong> +01 372 081 3892</p></div>
+
+            <div class="fourf"><p><strong>Email:</strong> info@flipside.ie</p></div>
+
+            <div style="text-align: left;" class="fivef"><p><strong>Follow us for more:</strong></p></div>
+
+            <div class="sixf">
+                <a href="https://twitter.com" class="fa fa-twitter"></a> <p style="display:inline;">@flipside_diner</p>
+                <a href="https://instagram.com" class="fa fa-instagram"></a> <p style="display:inline;">@flipside_diner</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

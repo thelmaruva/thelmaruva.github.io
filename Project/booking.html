@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Flipside</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="FLIPSIDE_prev_ui2.png">
+    <link rel="preconnect" href="out_of_focus_rest.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        label{
+            font-size: 3.5vw;
+        }
+        form{
+            width: 95%;
+        }
+        input {
+            width : 8vw;
+        } 
+        div img{
+            width:90%;
+        }
+        div p{
+            width: 90%;
+        }
+        .wrapper {
+        display: grid;
+        grid-template-columns: 1fr, 2fr;
+        gap: 10px;
+        grid-auto-rows: 30vw 30vw 30vw;
+        }
+        .one {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        padding: 0 5%;
+        }
+        .two {
+        grid-column: 2;
+        grid-row: 1;
+        padding: 0 5%;
+        }
+        .three {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 10% 10%;
+        }
+        @media(max-width: 800px){
+            .wrapper {
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 10px;
+            grid-auto-rows: 80vw 30vw 50vw;
+            }
+            .one {
+            grid-column: 1;
+            grid-row: 1;
+            }
+            .two {
+            grid-column: 1;
+            grid-row: 2;
+            }
+            .three {
+            grid-column: 1;
+            grid-row: 3;
+            }
+            form{
+            width: 90%;
+            padding: 0 5%;
+            }
+            div img{
+                width:60%;
+                padding: 0 20%;
+            }
+            div p{
+                width: 90%;
+                padding: 0 5%;
+            }
+            label{
+                font-size: 4vw;
+            }
+            form{
+                width: 95%;
+            }
+            input {
+                width : 20vw;
+            } 
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            let button = document.querySelector("button");
+
+            button.addEventListener("click", function(){
+                const number = document.getElementById("booking_no");
+                const emailAddress = document.getElementById("booking_email");
+
+                console.log(number);
+
+                if (number.value === "") {
+                    alert("Please enter a number.");
+                    number.focus();
+                }
+                else if(isNaN(number.value)){
+                    alert("Please enter a number.");
+                    number.focus();
+                }
+                else if (number.value > 6 || number.value < 1) {
+                    alert("Please enter a number between 1 and 6.");
+                    number.focus();
+                }
+
+                if(emailAddress.value == ""){
+                    alert("Please enter an email address.");
+                    emailAddress.focus();
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="media/FLIPSIDE_prev_ui2.png" alt="Flipside logo">
+    </header>
+   
+    <nav class="navbar">
+        <ul class="navlinks">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="aboutus"><a href="aboutus.html">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="whoarewe.html">Who Are We?</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="menus"><a href="menu.html" id="menu">Menu</a>
+                        <ul class="dropdown">
+                            <li><a href="dinnermenu.html">Dinner Menu</a></li>
+                            <li><a href="drinkmenu.html">Drinks Menu</a></li>
+                            <li><a href="dessertmenu.html">Dessert Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </div>
+          </ul>
+    </nav>
+    <h1>Bookings</h1>
+
+    <p style="font-size: x-large;">Want to ensure you get a seat? Go ahead and book your table ahead of time with our form below. 
+    <br>(Bookings not available for Flipside Bar).</p>
+
+    <div class="wrapper">
+
+        <div class="one">
+        <!-- image from: https://www.pexels.com/photo/black-and-red-floral-textile-1819669/ -->
+        <img id="non_body" src="media/out_of_focus_rest.jpg" alt="blurry restaurant">
+        </div>
+    
+        <!-- If I had more time I would have put this information into a database. -->
+        <div class="two">
+        <form action="input_booking.php" method="get">
+            <label for="booking_no">How many people is this booking for?:</label><br>
+            <input type="number" id="booking_no" name="booking_no" min="1" max="6" required><br>
+            <label for="booking_date">What date is this booking for?:</label><br>
+            <input type="date" id="booking_date" name="booking_date" required><br>
+            <label for="booking_time">What time is this booking for?:</label><br>
+            <input type="time" id="booking_time" name="booking_time" min="17:00" max="22:00" required><br>
+            <label for="booking_email">Please enter your email:</label><br>
+            <input type="email" id="booking_email" name="booking_email" pattern=".+@globex\.com" required><br>
+            <button type="button">Submit</button>
+        </form>
+        </div>
+    
+        <div class="three">
+        <p style="font-size: larger;">Please bear in mind bookings must start at 17:00 and end at 22:00, as per our opening times.
+        <br>For groups larger than 6 or special occasion bookings, please complete the email form on the contact us page <a href="contactus.html">here.</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapperf">
+            <div class="onef">
+                <p style="text-decoration: underline;"><strong>Opening Hours:</strong></p>
+            </div>
+
+            <div class="twof">
+            <ul style="text-align: center; padding: 0% 10%;" >
+                <li><strong>Bar:</strong> 19:00 - 02:00 (Mon. to Sat.)</li>
+                <li><strong>Restaurant:</strong> 17:00 - 22:00 (Mon. to Sat.)</li>
+            </ul>
+            </div>
+
+            <div class="threef"><p><strong>Tel:</strong> +01 372 081 3892</p></div>
+
+            <div class="fourf"><p><strong>Email:</strong> info@flipside.ie</p></div>
+
+            <div style="text-align: left;" class="fivef"><p><strong>Follow us for more:</strong></p></div>
+
+            <div class="sixf">
+                <a href="https://twitter.com" class="fa fa-twitter"></a> <p style="display:inline;">@flipside_diner</p>
+                <a href="https://instagram.com" class="fa fa-instagram"></a> <p style="display:inline;">@flipside_diner</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

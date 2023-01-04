@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Are We? | Flipside</title>
+    <link rel="preconnect" href="FLIPSIDE_prev_ui2.png">
+    <link rel="preconnect" href="in_restaurant.jpg">
+    <link rel="preconnect" href="staff_bar.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital@1&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        img{
+            width: 80%;
+            padding: 10px 10%;
+        }
+        .wrapper {
+        display: grid;
+        grid-template-columns: 1fr, 2fr;
+        gap: 10px;
+        grid-auto-rows: 350px 350px 350px;
+        }
+        .one {
+        grid-column: 1;
+        grid-row: 1 / 2;
+        padding: 10px 5%;
+        }
+        .two {
+        grid-column: 2;
+        grid-row: 1;
+        padding: 6% 10%;
+        }
+        .three {
+        grid-column: 2;
+        grid-row: 2;
+        padding: 6% 10%;
+        }
+        .four {
+        grid-column: 2;
+        grid-row: 3;
+        padding: 10px 5%;
+        }
+        .five {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 6% 10%;
+        }
+
+        .wrapper div p{
+            font-size: x-large;
+            border: 5px solid rgb(243, 134, 33);
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 10px 10px 5px rgb(138, 63, 2);
+        }
+        @media(max-width: 900px){
+        .wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+        grid-auto-rows: 100vw 80vw 80vw 40vw 70vw;
+        }
+        .one {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0 5%;
+        }
+        .two {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 0 10%;
+        }
+        .three {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 0 10%;
+        }
+        .four {
+        grid-column: 1;
+        grid-row: 4;
+        padding: 0 5%;
+        }
+        .five {
+        grid-column: 1;
+        grid-row: 5;
+        padding: 0 10%;
+        }
+
+        }
+    </style>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <img src="media/FLIPSIDE_prev_ui2.png" alt="Flipside logo">
+    </header>
+    
+    <nav class="navbar">
+        <ul class="navlinks">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="aboutus"><a href="aboutus.html">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="whoarewe.html">Who Are We?</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="menus"><a href="menu.html" id="menu">Menu</a>
+                        <ul class="dropdown">
+                            <li><a href="dinnermenu.html">Dinner Menu</a></li>
+                            <li><a href="drinkmenu.html">Drinks Menu</a></li>
+                            <li><a href="dessertmenu.html">Dessert Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </div>
+          </ul>
+    </nav>
+
+    <h1>Who Are We?</h1>
+
+    <div class="wrapper">
+        <div class="one">
+            <!-- image from: https://www.pexels.com/photo/city-restaurant-man-people-8261582/ -->
+            <img src="media/in_restaurant.jpg" alt="people at booth">
+        </div>
+
+        <div class="two">
+            <p>Flipside is a vintage diner, providing good tunes, good times and good food.
+            Flipside is the place to go for an experience like none other. We play non-stop throwback hits so you're transported as soon as you walk in.
+            For disco fever and great deals, there's no place better!
+            </p>
+        </div>
+
+        <div class="three">
+            <p> We're bringing it back to the old school, so come on in and experience a blast to the past like you never seen it and great food to match it too.
+            We have an old-timey booth layout and retro furnishings to add the perfect final touch. We serve diner style foods with modern twists.
+            </p>
+        </div>
+
+        <div class="four">
+            <!-- image from: https://www.pexels.com/photo/woman-bartender-smiling-while-mixing-liqueurs-1301547/ -->
+            <img src="media/staff_bar.jpg" alt="staff member at bar">
+        </div>
+
+        <div class="five">
+            <p>Flipside Bar is located just upstairs of Flipside Restaurant. This is the perfect place to relax, catch up, and just have fun. 
+            Admission is strictly 18s and up. Visit and see for yourself if we're worth the hype!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapperf">
+            <div class="onef">
+                <p style="text-decoration: underline;"><strong>Opening Hours:</strong></p>
+            </div>
+
+            <div class="twof">
+            <ul style="text-align: center; padding: 0% 10%;" >
+                <li><strong>Bar:</strong> 19:00 - 02:00 (Mon. to Sat.)</li>
+                <li><strong>Restaurant:</strong> 17:00 - 22:00 (Mon. to Sat.)</li>
+            </ul>
+            </div>
+
+            <div class="threef"><p><strong>Tel:</strong> +01 372 081 3892</p></div>
+
+            <div class="fourf"><p><strong>Email:</strong> info@flipside.ie</p></div>
+
+            <div style="text-align: left;" class="fivef"><p><strong>Follow us for more:</strong></p></div>
+
+            <div class="sixf">
+                <a href="https://twitter.com" class="fa fa-twitter"></a> <p style="display:inline;">@flipside_diner</p>
+                <a href="https://instagram.com" class="fa fa-instagram"></a> <p style="display:inline;">@flipside_diner</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
